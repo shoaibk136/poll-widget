@@ -24,7 +24,7 @@ const Poll = ({ pollId, question, options }) => {
       setVotes(updatedVotes);
       setSelectedOption(index);
       setTotalVotes(totalVotes + 1);
-      setShowResults(true); // Show percentage after voting
+      setShowResults(true); 
 
       // Save updated votes to localStorage
       localStorage.setItem(`poll-${pollId}`, JSON.stringify(updatedVotes));
