@@ -1,0 +1,117 @@
+/* Full-page styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+/* Poll container */
+.poll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Poll card (Box Design) */
+.poll-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.6s ease-out;
+}
+
+.poll-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Title Styling */
+.poll-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Poll Options */
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.poll-button {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.poll-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Button click bounce effect */
+.poll-button:active {
+  transform: scale(0.95);
+  animation: bounce 0.3s ease-out;
+}
+
+/* Selected vote effect */
+.poll-button.selected {
+  background: #28a745;
+  transform: scale(1.1);
+  animation: pulse 0.5s infinite alternate;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+  from {
+      transform: scale(1.1);
+  }
+  to {
+      transform: scale(1.15);
+  }
+}
