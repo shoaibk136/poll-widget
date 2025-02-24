@@ -7,11 +7,11 @@ This widget **does not use iframes**, stores votes in **local storage**, and is 
 
 ## ✨ Features
 
-- ✅ **Configurable Questions** - Easily define different polls.
-- ✅ **Local Storage Support** - Votes persist even after a page refresh.
-- ✅ **Real-time Vote Percentage** - Users see results immediately after voting.
-- ✅ **Multiple Polls Support** - Can display multiple polls on the same page.
-- ✅ **Responsive & Animated** - Clean UI with smooth transitions.
+-  **Configurable Questions** - Easily define different polls.
+-  **Local Storage Support** - Votes persist even after a page refresh.
+-  **Real-time Vote Percentage** - Users see results immediately after voting.
+-  **Multiple Polls Support** - Can display multiple polls on the same page.
+-  **Responsive & Animated** - Clean UI with smooth transitions.
 
 ---
 
@@ -22,7 +22,7 @@ This widget **does not use iframes**, stores votes in **local storage**, and is 
 Clone the repository and install dependencies:
 
 ```sh
-git clone <repository_url>
+git clone https://github.com/shoaibk136/poll-widget.git
 cd poll-widget
 npm install
 
